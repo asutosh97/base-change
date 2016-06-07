@@ -1,7 +1,8 @@
 #include"base_change.h"
 long long a2i(char *s)
 {
-	while(isspace(*s++));
+	while(isspace(*s))
+		s++;
 	if(!isdigit(*s))
 		return -1;
 	long long value;
